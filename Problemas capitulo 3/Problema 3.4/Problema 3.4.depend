@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1727038270 source:c:\c3-jueves repositorio\problemas capitulo 3\problema 3.4\main.c
+	<stdio.h>
+	<math.h>
+
