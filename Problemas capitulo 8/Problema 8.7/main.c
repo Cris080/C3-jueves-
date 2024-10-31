@@ -68,7 +68,7 @@ void F1(alumno A[], int T)
     float SUM;
     for (I=0; I<T; I++)
     {
-        printf("\nMatrícula del alumno : %d", A[I].matri);
+        printf("\nMatricula del alumno : %d", A[I].matri);
         SUM = 0.0;
         for (J=0; J<5; J++)
         SUM = SUM + A[I].cal[J].pro;

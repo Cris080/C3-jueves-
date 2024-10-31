@@ -4,8 +4,8 @@
 /* Estructuras-3.
 El programa muestra la manera en que se declara una estructura anidada, así como la
 forma de acceso a los campos de las variables o apuntadores de tipo estructura, tanto
- para lectura como para escritura. Se utiliza además una función que recibe como parámetro
- un apuntador de tipo estructura. */
+para lectura como para escritura. Se utiliza además una función que recibe como parámetro
+un apuntador de tipo estructura. */
 
  typedef struct
  {
@@ -60,13 +60,13 @@ void main(void)
     gets(e1->departamento);
     printf("Ingrese el sueldo del empleado: ");
     scanf("%f", &e1->sueldo);
-    printf("—-Ingrese la dirección del empleado—-");
+    printf("—-Ingrese la direccion del empleado—-");
     printf("\n\tCalle:" );
     fflush(stdin);
     gets(e1->dirección, calle);
-    printf("\tNúmero:");
+    printf("\tNumero:");
     scanf("%d", &e1->direccion.numero);
-    printf("\tCódigo Postal:");
+    printf("\tCodigo Postal:");
     scanf("%d", &e1->direccion.cp);
     printf("\tLocalidad:");
     fflush(stdin);
@@ -79,13 +79,13 @@ void main(void)
     gets(e3.departamento);
     printf("Ingrese el sueldo del empleado: ");
     scanf("%f", &e3.sueldo);
-    printf("—-Ingrese la dirección del empleado—-");
+    printf("—-Ingrese la direccion del empleado—-");
     printf("\n\tCalle:");
     fflush(stdin);
     gets(e3.direccion.calle);
-    printf("\tNúmero:");
+    printf("\tNumero:");
     scanf("%d", &e3.direccion.numero);
-    printf("\tCódigo Postal:");
+    printf("\tCodigo Postal:");
     scanf("%d", &e3.direccion.cp);
     printf("\tLocalidad:");
     fflush(stdin);

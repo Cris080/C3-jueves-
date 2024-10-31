@@ -41,14 +41,14 @@ alumno de T elementos. */
     for (I=0; I<T; I++)
     {
         printf("\nIngrese los datos del alumno %d", I+1);
-        printf("\nIngrese la matrícula del alumno:");
+        printf("\nIngrese la matricula del alumno:");
         scanf("%d", &A[I].matricula);
         fflush(stdin);
         printf("Ingrese el nombre del alumno:");
         gets(A[I].nombre);
         for (J=0; J<5; J++)
         {
-            printf("\tIngrese la calificación %d del alumno %d:", J+1, I+1);
+            printf("\tIngrese la calificacion %d del alumno %d:", J+1, I+1);
             scanf("%f", &A[I].cal[J]);
         }
     }
@@ -60,7 +60,7 @@ void F1(alumno A[], int T) /* La función F1 obtiene la matrícula y el promedio d
     float SUM, PRO;
     for (I=0, I<T; I++)
     {
-        printf("\nMatrícula del alumno: %d", A[I].matricula);
+        printf("\nMatricula del alumno: %d", A[I].matricula);
         SUM = 0.0;
         for (J=0; J<5; J++)
             SUM = SUM + A[I].cal[J];
@@ -76,7 +76,7 @@ tercera materia es mayor a 9. */
     printf("\nAlumnos con calificación en la tercera materia > 9");
     for (I=0; I<T; I++)
         if (A[I].cal[2] > 9)
-        printf("\nMatrícula del alumno: %d", A[I].matricula);
+        printf("\nMatricula del alumno: %d", A[I].matricula);
 
 }
 

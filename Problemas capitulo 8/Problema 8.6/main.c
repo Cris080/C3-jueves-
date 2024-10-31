@@ -27,12 +27,12 @@ void main(void)
     int TAM, OPE;
     do
     {
-        printf("Ingrese el número de productos:");
+        printf("Ingrese el numero de productos:");
         scanf("%d", &TAM);
     }
     while (TAM > 100 || TAM < 1);
     Lectura(INV, TAM);
-    printf("\nIngrese operación a realizar. \n\t\t1 – Ventas \n\t\t 2 – Reabastecimiento \n\t\t 3 - Nuevos Productos \n\t\t 4 – Inventario \n\t\t 0 - Salir:");
+    printf("\nIngrese operacion a realizar. \n\t\t1 – Ventas \n\t\t 2 – Reabastecimiento \n\t\t 3 - Nuevos Productos \n\t\t 4 – Inventario \n\t\t 0 - Salir:");
     scanf("%d", &OPE);
     while (OPE)
     {
