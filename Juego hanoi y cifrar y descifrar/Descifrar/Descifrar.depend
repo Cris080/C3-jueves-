@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1732151167 source:c:\c3-jueves repositorio\juego hanoi y cifrar y descifrar\descifrar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
