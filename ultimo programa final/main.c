@@ -10,13 +10,13 @@
 typedef struct //define estructura alumno
 {
     char nombre[MAX_NAME];
-    float promedio;
+    float promedio; //almacena promedio (decimal)
     char carrera[MAX_CARRERA];
 } Alumno;
 
 void nuevoArchivo(const char *filename)
 {
-    FILE *file = fopen(filename, "wb"); //crea el archivo
+    FILE *file = fopen(filename, "wb"); //crea el archivo binario vacio
     if (!file)
     {
         perror("Error al crear el archivo");
@@ -28,7 +28,7 @@ void nuevoArchivo(const char *filename)
 
 void guardarAlumno(const char *filename, Alumno alumno)
 {
-    FILE *file = fopen(filename, "ab");
+    FILE *file = fopen(filename, "ab"); //guarda un nuevo registro de alumno en el archivo
     if (!file)
     {
         perror("Error al abrir el archivo");
@@ -39,7 +39,7 @@ void guardarAlumno(const char *filename, Alumno alumno)
     printf("Alumno guardado exitosamente.\n");
 }
 
-void listarAlumnos(const char *filename)
+void listarAlumnos(const char *filename) //lee y muestra todos los registros de alumnos del archivo
 {
     FILE *file = fopen(filename, "rb");
     if (!file)
@@ -60,7 +60,7 @@ void listarAlumnos(const char *filename)
     fclose(file);
 }
 
-void buscarAlumno(const char *filename, const char *nombreBuscado)
+void buscarAlumno(const char *filename, const char *nombreBuscado) //busca el alumno por su nombre
 {
     FILE *file = fopen(filename, "rb");
     if (!file)
@@ -89,7 +89,7 @@ void buscarAlumno(const char *filename, const char *nombreBuscado)
     }
 }
 
-int main()
+int main() //muestra el menu para gestionar las funciones principales, cada opcion llama a una funcion segun el caso
 {
     int opcion;
     char filename[100];
